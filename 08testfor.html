@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08testfor.html</title>
+    <style>
+        * {
+            font-size: 20pt;
+        }
+    </style>
+    <script>
+        function mytest() {
+            var result = '';
+            var su = 0;
+            for (count = 1; count < 11; count = count + 1) {
+                su = su + 3;
+                if (su == 15) { break; }
+                result = result + su + '';
+                document.getElementById('display').innerHTML = result;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="display">
+        <img src="./images/main_4.jpg" width="500" alt="">
+        <p></p>
+        <h3>08testfor.html</h3>
+        <button onclick="mytest()">숫자출력</button>
+
+    </div>
+</body>
+
+</html>

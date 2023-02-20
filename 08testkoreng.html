@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08testkoreng.html</title>
+    <style>
+        * {
+            font-size: 16pt;
+        }
+    </style>
+    <script>
+        function myHap() {
+            var info = ''; //info=message=msg=data
+            var kor = 0, wbg = 0, hap = 0, avg = 0; //변수선언및 초기화
+            var result = '';
+
+            kor = 90;
+            eng = 85;
+            hap = kor + eng;
+            avg = hap / 2;
+
+            if (avg >= 70) {result='합격';}
+            else {result='재시험';}
+
+            // console.log('콘솔 총점 =', hap);
+            // console.log('콘솔 평균 =', avg);
+            // document.write('콘솔 총점 =', hap, '<br>');
+            // document.write('콘솔 평균 =', avg);
+            info = '총점=' + hap + ' 평균=' + avg+ '';
+            info=info + ' 결과=' + result;
+            document.getElementById('display').innerHTML = info;
+        }
+    </script>
+
+</head>
+
+<body>
+    <img src="./images/a2.png" width="200" height="100" alt="">
+    <img src="./images/a2.png" width="200" height="100" alt="">
+    <img src="./images/a2.png" width="200" height="100" alt="">
+    <h2>08testkoreng.html</h2>
+    <button onclick="javascript:myHap();">함수호출</button>
+    <button onclick="myHap()">함수호출</button>
+    <div id="display"></div>
+
+</body>
+
+</html>
