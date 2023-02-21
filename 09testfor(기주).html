@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>09testfor.html</title>
     <style>
-        *{font-size: 20pt;}
+        * {
+            font-size: 20pt;
+        }
     </style>
     <script>
-        function mytest(){
-            var su=0, result=0;
-            for (var i=1;i<6;i=i+1){
-                su=su+1;
-                document.write(su+ ' ');
-                result=result+su
+
+        function mytest() {
+            var su = 0;
+            su1 = su + 1;
+            su2 = su + 2;
+            su3 = su + 3;
+            su4 = su + 4;
+            su5 = su + 5;
+
+            for (count = 1; count < 6; count = count + 1) {
+                su = su + 1;
+                document.write(su, ' ');
             }
-            document.write('합계'+result);
+            hap = su1 + su2 + su3 + su4 + su5;
+            document.write('합계 =', hap, '<br>');
         }
     </script>
 </head>
+
 <body>
-    <h2>09testfor.html</h2>
-    <button onclick="mytest()">for문 확인</button><p></p>
     <div id="display">
-    <img src="./images/바넬로피3.jpg" width="200" height="200">
+        <img src="./images/main_4.jpg" width="500" alt="">
+        <p></p>
+        <h3>09testfor.html</h3>
+        <button onclick="mytest()">숫자출력</button>
+
     </div>
 </body>
+
 </html>
